@@ -6,9 +6,6 @@ show experience  which is got from daily study
 # 20250111 新增
 
 [谷歌大模型 Gemini 官网](https://aistudio.google.com/app/prompts/new_chat)
-
-![alt text](fig/image-17.png)
-
 `Prompt`:
 
 ```
@@ -24,8 +21,6 @@ show experience  which is got from daily study
 ```
 
 将生成的代码复制到：[这个网页](https://mermaid.live/edit#pako:eNpVkEFrhEAMhf9KyKkF_QMeCl1t97Klhe6p6iFodIZ1JsM4sizqf--4ttDmlPC-9whvxkZaxgy7Qa6NIh_gXFQW4jyXufJ6DIbGGtL0aTlyACOWbwscHo4CoxLntO0fd_6wQZDPpw1jCErby7pL-d3_bnmBojyRC-Lqv8r5Kgu8lPpDxfj_ivIcXa9lR1lHaUMecvI1JmjYG9JtfH3eDBUGxYYrzOLackfTECqs7BpRmoJ83myDWfATJ-hl6hXGvGGM1-RaClxo6j2ZX4RbHcS_7d3cK0rQkf0SMT_G9RsZb2ap)
-
-![alt text](fig/image-18.png)
 
 # 20250107 新增
 
@@ -61,9 +56,7 @@ show experience  which is got from daily study
 
 需要更改的`settings`:
 1. guns version 1.8
-![alt text](fig/image.png)
 2. 修改 maven 配置
-![alt text](fig/image-1.png)
 3. 设置 `model-platform-yx/guns-8.1.2-backend/src/main/java` 为 Source root, (右键 -> Mark Directory as -> Sources Root)
 4. 设置 `model-platform-yx/guns-8.1.2-backend/src/main/resources` 为 Resource root, (右键 -> Mark Directory as -> Resource Root)
 5. 打开guns-8.1.2-backend启动后端即可
@@ -80,7 +73,6 @@ show experience  which is got from daily study
 
 把建表语句输入`新建查询`中，点击运行
 
-![alt text](fig/image-6.png)
 
 推荐先在SQL中生成表，可以找到一些报错
 
@@ -98,7 +90,6 @@ show experience  which is got from daily study
 
 -> 2 `数据表`
 
-![alt text](fig/image-4.png)
 
 -> 3 [右侧上方] `导入SQL`
 
@@ -122,11 +113,11 @@ show experience  which is got from daily study
 
 -> 3 `后端代码`
 
-![alt text](fig/image-3.png)
+
 
 开始建立后端代码，红框部分请根据自己的模块进行修改
 
-![alt text](fig/image-2.png)
+
 
 -> 4 将我的分类中所有输入这个子模块的表导入进去 (一般是最后几个)
 
@@ -144,8 +135,6 @@ show experience  which is got from daily study
 
 开始建立前端代码，红框部分请根据自己的模块进行修改
 
-![alt text](fig/image-5.png)
-
 -> 4 将我的分类中所有输入这个子模块的表导入进去 (一般是最后几个)
 
 -> 5 点击`生成代码`
@@ -159,7 +148,7 @@ show experience  which is got from daily study
 
 1. 将下载的后端代码解压，将解压后的文件夹拷贝到`guns-8.1.2-backend/src/main/java/cn/stylefeng/guns/modular`相应的模块中
 2. 修改所有 `controller` 中的导入包
-   ![alt text](fig/image-7.png)
+
     a. 删除红色的行
 
     b. 在 @Resource 上 按快捷键 `Alt + Enter` （mac 上是 `Option + Enter`） 选择 `Add module dependency`，选择当前模块
@@ -170,7 +159,7 @@ show experience  which is got from daily study
 
     c. 在所有的 `...Controller` 中 执行 a,b 步骤 (有几个表就有几个 `...Controller` )
 3. 修改所有 `pojo.request` 中的导入包
-   ![alt text](fig/image-8.png)
+
     a. 删除红色的俩行
 
     b. 在 `@NotNull` 上 按快捷键 `Alt + Enter` （mac 上是 `Option + Enter`） 选择 `javax` 的 `@NotNull`
@@ -184,7 +173,7 @@ show experience  which is got from daily study
 
     d. 在 所有的 `...Request` 中 执行 a,b,c 步骤 (有几个表就有几个 `...Request` )
 4. 修改所有 `pojo.response` 中的导入包
-    ![alt text](fig/image-9.png)
+
     a. 在第一行 上 按快捷键 `Alt + Enter` （mac 上是 `Option + Enter`） 选择 上图中红框的包
 
     b. 在 所有的 `...Vo` 中 执行 a 步骤 (有几个表就有几个 `...Vo` )
@@ -203,17 +192,13 @@ show experience  which is got from daily study
 
 -> 2 点击`后台管理`
 
-![alt text](fig/image-10.png)
-
 -> 3 点击`应用`
 
 -> 4 点击`新建`
 
-![alt text](fig/image-11.png)
 
 -> 5 根据自己子系统输入相应的信息
 
-![alt text](fig/image-12.png)
 
 ## 建立二级目录
 
@@ -221,7 +206,6 @@ show experience  which is got from daily study
 
 -> 2 在最右边滑动到自己的子系统
 
-![alt text](fig/image-13.png)
 
 -> 3 按照图示步骤修改为自己的二级目录信息
 
@@ -231,15 +215,11 @@ show experience  which is got from daily study
 
 -> 1 点击相应二级目录的`新建`
 
-![alt text](fig/image-14.png)
-
 -> 2 按照图示步骤修改为自己的三级目录信息
 
-![alt text](fig/image-15.png)
 
 `路由地址`为前端代码中的vue地址：
 
-![alt text](fig/image-16.png)
 
 `链接地址` 与 `路由地址` 一致
 
